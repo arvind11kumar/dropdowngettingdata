@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h3> using option in seleting tag using</h3>
+            <input type="text" required placeholder="enter name"> 
+            <select required>
+                <option value="none" class="value">none</option>
+                <option value="java" class="value">java</option>
+                <option value="javascript" class="value">javascript</option>
+                <option value="C++" class="value">c++</option>
+                <option value="python" class="value">python</option>
+            </select>
+            <button type="button">submit</button>
+           <h1></h1> <h2></h2>  
+            //give them proper id and or class name and then acces them
+        </form>
+
+    </div>
+    
+</body>
+<script > 
+let inputtag=document.querySelector("input");
+let selecttag=document.querySelector("select");
+let h2tag=document.querySelector("h2");
+let h1tag=document.querySelector("h1");
+let buttontag=document.querySelector("button");
+
+buttontag.addEventListener("click",function(){
+   h2tag.innerText=selecttag.value;
+    h1tag.innerText=inputtag.value;
+    
+
+
+})
+
+
+</script>
+</html>
